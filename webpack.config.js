@@ -11,7 +11,7 @@ module.exports = {
     module:{
         rules:[
             {
-                test:/\.(js || jsx || ts)$/,
+                test:/\.(js|jsx|ts)$/,
                 exclude:/node_modules/,
                 use:{
                     loader: "babel-loader",
@@ -21,7 +21,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.(css || scss)$/,
+                test: /\.(css|scss)$/,
                 use: ["style-loader", "css-loader", "postcss-loader"]
             }
         ],
