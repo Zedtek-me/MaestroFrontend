@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --serve --config ./webpack.config.js --mode dev",
+    "dev": "webpack serve --config ./webpack.config.js --mode development",
     "build": "webpack --config ./webpack.config.js"
   },
   "repository": {
@@ -20,11 +20,16 @@
   },
   "homepage": "https://github.com/Zedtek-me/MaestroFrontend#readme",
   "dependencies": {
+    "autoprefixer": "^10.4.20",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "postcss": "^8.4.41",
+    "postcss-loader": "^8.1.1",
     "prisma": "^5.18.0",
     "react": "^18.3.1",
-    "react-router-dom": "^6.26.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1",
+    "tailwindcss": "^3.4.10"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.25.3",
