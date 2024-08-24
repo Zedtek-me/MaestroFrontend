@@ -23,6 +23,10 @@ module.exports = {
             {
                 test: /\.(css|scss)$/,
                 use: ["style-loader", "css-loader", "postcss-loader"]
+            },
+            {
+                test: /\.(jpg|png|ico)$/,
+                use: "asset/resource"
             }
         ],
     },
