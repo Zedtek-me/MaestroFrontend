@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Header = ()=>{
     return (
-        <div className="headerContents">
+        <div className="headerContents flex flex-row justify-between item-center border-solid border-0 border-black">
             <div className="logo">
                 <img src="" alt="logo"/>
             </div>
@@ -16,7 +16,7 @@ export const Header = ()=>{
             </ul>
             {/* other nav items */}
             <ul className="other-navs">
-                <li className="courses other-nav"><Link>Course</Link></li>
+                <li className="courses other-nav"><Link>Courses</Link></li>
                 <li className="instructors other-nav"><Link>Instructors</Link></li>
                 <li className="events other-nav"><Link>Events</Link></li>
             </ul>
