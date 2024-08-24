@@ -5,7 +5,7 @@ import SignUp from "./auths/SignUp";
 
 
 export default function App(){
-    return <div className="w-screen h-screen flex justify-center items-center">
+    return <div className="w-screen h-screen flex-col justify-start items-center">
             <Router>
                 <Routes>
                     <Route path="/">

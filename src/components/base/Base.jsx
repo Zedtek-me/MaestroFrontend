@@ -6,7 +6,7 @@ import { Header, FeatureNav } from "./Navigation"
 
 const Base = () =>{
     return (
-        <div className="base flex flex-col justify-center items-center">
+        <div className="base flex flex-col justify-start items-center w-screen bg-yellow-500 h-auto">
             <Header/>
             <FeatureNav/>
         </div>
