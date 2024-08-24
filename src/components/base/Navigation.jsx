@@ -29,7 +29,7 @@ export const Header = ()=>{
 export const FeatureNav = () =>{
     return (
         // feature navigation across all pages
-        <div className="hero bg-blue-800 text-white p-5 w-full flex flex-col justify-center items-center flex-wrap">
+        <div className="hero bg-blue-800 text-white p-5 w-full flex flex-col justify-center items-center flex-wrap h-1/2">
             <div className="catch-phrase text-center flex flex-col justify-center items-center flex-wrap">
                 <h1 className="catch-phrase-text text-5xl font-bold">
                     Unluck Your Musical Potential At Maestro Arts And Music Hub

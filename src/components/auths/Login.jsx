@@ -7,7 +7,8 @@ const Login = () =>{
     return (
         <div className="login">
             <Base/>
-            login part
+            This is the login component.
+            All authentications related to loging in goes here.
         </div>
     )
 }
