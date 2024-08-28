@@ -7,14 +7,14 @@ import { displayOtherNavs, redirectRoute } from "../../../utils/general";
 export const Header = ()=>{
     let navigator = useNavigate()
     return (
-        <div className="headerContents flex flex-row justify-between item-center bg-white text-blue-800 w-full p-5">
-            <div className="logo m-0">
+        <div className="headerContents flex flex-row justify-evenly item-center bg-white text-blue-800 w-full p-5">
+            <div className="logo m-0 flex justify-center item-center text-center">
                 <img src="" alt="logo"/>
             </div>
             <ul className="baseNav flex flex-row justify-between item-center m-0">
-                <li className="about nav-child m-4"><Link>About</Link></li>
-                <li className="services nav-child m-4"><Link>Services</Link></li>
-                <li className="contact nav-child m-4"><Link>Contact</Link></li>
+                <li className="about nav-child m-4"><Link to="/about/">About</Link></li>
+                <li className="services nav-child m-4"><Link to="/services/">Services</Link></li>
+                <li className="contact nav-child m-4"><Link to="/contact/">Contact</Link></li>
                 <li className="more nav-child m-4 relative cursor-pointer" onClick={displayOtherNavs}>More {/*<img src="" alt="toggle-icon" className="absolute"/>*/}</li>
             </ul>
              <div className="action-btns flex flex-row justify-center item-center m-0 p-0 text-center">
@@ -33,6 +33,7 @@ export const Header = ()=>{
 
 
 export const FeatureNav = () =>{
+    let navigator = useNavigate()
     return (
         // feature navigation across all pages
         <div className="hero bg-blue-1000 text-white p-5 w-full flex flex-col justify-center items-center flex-wrap">
@@ -47,8 +48,8 @@ export const FeatureNav = () =>{
                     </p>
                 </div>
                 <div className="auth-btns flex justify-space-between p-5 font-medium text-lg">
-                    <input type="button" value="Learn More" className="learn-more-btn m-4 bg-white text-blue-800 p-3"/>
-                    <input type="button" value="Sign Up" className="signup-btn m-4 p-3"/>
+                    <input type="button" value="Learn More" className="learn-more-btn m-4 bg-white text-blue-800 p-3" onClick={(e)=> redirectRoute(navigator, "/learn-more/")}/>
+                    <input type="button" value="Sign Up" className="signup-btn m-4 p-3" onClick={(e)=> redirectRoute(navigator, "/signup/")}/>
                 </div>
             </div>
         </div>
