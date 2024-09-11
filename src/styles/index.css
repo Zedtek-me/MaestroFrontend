@@ -5,16 +5,22 @@
 /* navigation styles */
 
 .headerContents{
-    height: 20%;
+    height: 15%;
     color: rgb(26, 26, 114);
 }
-.hero{
+.hero, .join-the-community{
     background-color: rgb(26, 26, 114);
-    height: 80%;
+    height: 85%;
+    color:white;
+}
+.hero-on-signup{
+    background-color: white;
+    color: black;
 }
 .catch-phrase-text{
     line-height: 1.3;
 }
+/* auths */
 .login-btn, .signup-btn, .learn-more-btn, .enroll-btn{
     color: rgb(26, 26, 114);
     cursor: pointer;
@@ -23,4 +29,76 @@
     background-color: rgb(26, 26, 114);
     border: solid 1px white;
     color: white;
+}
+
+.form-and-img{
+    height: 70%;
+    width: 100%;
+    padding: 5%;
+    /* margin-top: 2px; */
+    background-color: bisque;
+}
+
+.side-img-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.form-side-img{
+   object-fit:contain;
+   width: 100%;
+   height: 100%;
+}
+
+.auth-form-wrapper, .auth-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    height: 70%;
+    /* background-color: bisque; */
+}
+.auth-form, .other-signup-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    /* margin-top: -5%; */
+}
+
+.other-signup-data{
+    /* margin-bottom: -8%; */
+}
+
+.auth-txt{
+    font-size: 50px;
+    font-weight: 400;
+    color: rgb(26, 26, 114);
+    align-self: flex-start;
+    z-index: 1;
+    /* margin-left:1%; */
+}
+
+.auth-form > label, .other-signup-data > label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70%;
+    height: 50% !important;
+}
+
+.auth-form > label > input, .other-signup-data > label > input{
+    padding: 5px;
+    border: solid 1px rgb(26, 26, 114);
+    outline: none;
+    text-align: center;
+    width: 100%;
+    height: 100%;
 }

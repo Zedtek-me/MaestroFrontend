@@ -1,14 +1,16 @@
 import React from "react"
 import "../../styles/index.css"
-import { Header, FeatureNav } from "./Navigation"
+import { Header, FeatureNav, NavOnSignUp } from "./Navigation"
 
 
 
-const Base = () =>{
+const Base = ({location}) =>{
     return (
-        <div className="base flex flex-col justify-start items-center w-screen h-full bg-yellow-400">
+        <div className="base flex flex-col justify-start items-center w-screen bg-yellow-400">
             <Header/>
-            <FeatureNav/>
+            {
+               location != "signup" ? <FeatureNav/> : <NavOnSignUp/>
+            }
         </div>
     )
 }

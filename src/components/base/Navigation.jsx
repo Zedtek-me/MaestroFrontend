@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { displayOtherNavs, redirectRoute } from "../../../utils/general";
+import maestroLogo from "../../../static/MaestroAssets/maestroLogo.png";
 
 
 
@@ -9,7 +10,7 @@ export const Header = ()=>{
     return (
         <div className="headerContents flex flex-row justify-evenly item-center bg-white text-blue-800 w-full p-5">
             <div className="logo m-0 flex justify-center item-center text-center">
-                <img src="" alt="logo"/>
+                <img src={maestroLogo} alt="logo"/>
             </div>
             <ul className="baseNav flex flex-row justify-between item-center m-0">
                 <li className="about nav-child m-4"><Link to="/about/">About</Link></li>
@@ -52,6 +53,36 @@ export const FeatureNav = () =>{
                     <input type="button" value="Sign Up" className="signup-btn m-4 p-3" onClick={(e)=> redirectRoute(navigator, "/signup/")}/>
                 </div>
             </div>
+        </div>
+    )
+}
+
+export const NavOnSignUp = ()=>{
+    return (
+        <div className="hero-on-signup flex flex-col justify-center items-center w-full h-full">
+            <LessonChoiceNav/>
+            <JoinTheCommunity/>
+        </div>
+    )
+}
+
+export const JoinTheCommunity = () =>{
+    return (
+        <div className="join-the-community flex flex-col justify-between items-center p-5 w-full h-1/2">
+            <h5 className="discover-text m-2">Discover</h5>
+            <h1 className="join-the-com text-6xl font-semibold m-2">Join the community</h1>
+            <div className="unlock-nd-cta flex flex-col justify-between items-center h-1/2 text-center m-2">
+                <p className="unlock-text m-2">Unlock you potential with our online learning platform</p>
+                <button type="button m-2">Learn More</button>
+            </div>
+        </div>
+    )
+}
+
+export const LessonChoiceNav = ()=>{
+    return (
+        <div className="lesson-choices flex flex-col justify-center items-center w-screen h-1/2">
+            items in lesson choices component
         </div>
     )
 }
