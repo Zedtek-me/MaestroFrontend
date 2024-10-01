@@ -8,10 +8,10 @@ import maestroLogo from "../../../static/MaestroAssets/maestroLogo.png";
 export const Header = ()=>{
     let navigator = useNavigate()
     return (
-        <div className="headerContents flex flex-row justify-evenly item-center bg-white text-blue-800 w-full p-5">
-            <div className="logo m-0 flex justify-center item-center text-center">
-                <img src={maestroLogo} alt="logo"/>
-            </div>
+        <div className="headerContents flex flex-row justify-between item-center bg-white text-blue-800 w-full p-5">
+            <Link to="/" className="logo m-0 flex justify-center item-center text-center self-start">
+                <img src={maestroLogo} alt="logo" className="flex flex-row justify-center item-center self-start"/>
+            </Link>
             <ul className="baseNav flex flex-row justify-between item-center m-0">
                 <li className="about nav-child m-4"><Link to="/about/">About</Link></li>
                 <li className="services nav-child m-4"><Link to="/services/">Services</Link></li>
