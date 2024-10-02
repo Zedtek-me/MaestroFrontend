@@ -49,8 +49,8 @@ export const FeatureNav = () =>{
                     </p>
                 </div>
                 <div className="auth-btns flex justify-space-between p-5 font-medium text-lg">
-                    <input type="button" value="Learn More" className="learn-more-btn m-4 bg-white text-blue-800 p-3" onClick={(e)=> redirectRoute(navigator, "/learn-more/")}/>
-                    <input type="button" value="Sign Up" className="signup-btn m-4 p-3" onClick={(e)=> redirectRoute(navigator, "/signup/")}/>
+                    <input type="button" value="Learn More" className="learn-more-btn m-4 bg-white text-blue-800 p-3 cursor-pointer" onClick={(e)=> redirectRoute(navigator, "/learn-more/")}/>
+                    <input type="button" value="Sign Up" className="signup-btn m-4 p-3 cursor-pointer" onClick={(e)=> redirectRoute(navigator, "/signup/")}/>
                 </div>
             </div>
         </div>

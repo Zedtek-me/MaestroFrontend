@@ -50,3 +50,18 @@ button[type="submit"]{
 .sign__in__prompt__txt{
     color: rgb(26, 26, 114);
 }
+
+.discover__board{
+    background-color: rgb(26, 26, 114);
+    color: white;
+    height: 70%;
+    width: 100%;
+}
+
+.signup__in__discover{
+    color: rgb(26, 26, 114);
+    width: 100px;
+}
+.footer{
+    height: 50%;
+}

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "../../styles/index.css";
-import Base from "../base/Base";
+import Base, { Footer } from "../base/Base";
 import { handleFormSubmission, handleInput } from "../../../utils/auth_utils/auth";
 
 
@@ -13,16 +13,15 @@ const Login = () =>{
             <form method="POST" className="login__form flex flex-col justify-ceneter items-center self-center justify-self-center h-1/2 w-1/2 p-5" onSubmit={(event)=> handleFormSubmission(event, loginData)}>
                 <label htmlFor="email" className="email m-3 flex flex-col justify-center items-start w-full">
                     <p className="flex justify-start text-start items-center text-3xl self-start">Email</p>
-                    <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" onChange={(event)=>{handleInput(event, setLoginData)}}/>
+                    <input type="email" name="email" className="text-center" id="email" placeholder="johndoe@gmail.com" onChange={(event)=>{handleInput(event, setLoginData)}}/>
                 </label>
                 <label htmlFor="password" className="password m-3 flex flex-col justify-center items-start w-full">
                     <p className="flex justify-start text-start items-center text-3xl self-start">Password</p>
-                    <input type="password" name="password" id="password" placeholder="********" onChange={(event)=>{handleInput(event, setLoginData)}}/>
+                    <input type="password" name="password" className="text-center" id="password" placeholder="********" onChange={(event)=>{handleInput(event, setLoginData)}}/>
                 </label>
-                <button type="submit" className="submit login flex flex-row justify-center items-center text-3xl">Login</button>
+                <button type="submit" className="submit login flex flex-row justify-center items-center text-xl text-center">Login</button>
             </form>
-            This is the login component.
-            All authentications related to loging in goes here.
+            <Footer loginPage={true}/>
         </div>
     )
 }
