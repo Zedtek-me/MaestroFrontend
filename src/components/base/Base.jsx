@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import "../../styles/index.css"
 import { Header, FeatureNav, NavOnSignUp } from "./Navigation"
 
@@ -36,6 +37,12 @@ export const Footer = ({loginPage})=>{
                     <p id="linkedin">LinkedIn</p>
                     <p id="youtube">Youtube</p>
                 </div>
+            </div>
+            <hr className="footer__divider"/>
+            <div className="policy__other__links text-black">
+                <Link>Privacy Policy</Link>
+                <Link>Terms and conditions</Link>
+                <Link>Cookies settings</Link>
             </div>
         </div>
     )
