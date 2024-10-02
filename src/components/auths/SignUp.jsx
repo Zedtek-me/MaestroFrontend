@@ -8,9 +8,9 @@ import { handleFormSubmission, handleInput } from "../../../utils/auth_utils/aut
 const SignUp = (props) =>{
     const [signupData, setSignupData] = useState({})
     return (
-        <div className="auth signup h-full bg-white">
+        <div className="auth signup h-full bg-white flex flex-col">
             <Base location="signup"/>
-            <form action="" className="signup__form">
+            <form action="" className="signup__form flex flex-row">
                 <label htmlFor="first_name" className="first_name m-3">
                     <p>Fisrt Name</p>
                     <input type="text" name="first_name" id="first_name" placeholder="Zechariah"/>
