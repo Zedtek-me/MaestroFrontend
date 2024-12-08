@@ -56,6 +56,11 @@ button[type="submit"]{
     color: white;
     height: 70%;
     width: 100%;
+    padding: 120px;
+}
+
+.discover-txt{
+    font-size: 40px;
 }
 
 .signup__in__discover{
@@ -64,4 +69,54 @@ button[type="submit"]{
 }
 .footer{
     height: 50%;
+    width: 100%;
+    
+}
+
+.other__footer__things{
+    padding-left : 55px;
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+    margin-top: 0px;
+    color: rgb(26, 26, 114);
+    width: 80%;
+}
+
+.info-box{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.newsletter__mail, .newsletter__submit__btn{
+    border: solid 1px rgb(26, 26, 114);
+    outline: 1px rgb(26, 26, 114);
+    padding: 10px;
+    margin: 5px;
+    width:60%;
+    font-size: 18px;
+}
+
+.newsletter__submit__btn{
+    width: 15%;
+    padding: 10 18px 10 18px;
+    padding-left: 18px;
+}
+
+.social__links, .policy__other__links{
+    color : rgb(26, 26, 114);
+}
+
+.cta-txt{
+    font-weight: bold;
+}
+
+.policy__other__links{
+    text-decoration: underline;
 }
