@@ -13,14 +13,14 @@ export const Header = ()=>{
                 <img src={maestroLogo} alt="logo" className="flex flex-row justify-center item-center self-start"/>
             </Link>
             <ul className="baseNav flex flex-row justify-between item-center m-0">
-                <li className="about nav-child m-4"><Link to="/about/">About</Link></li>
-                <li className="services nav-child m-4"><Link to="/services/">Services</Link></li>
-                <li className="contact nav-child m-4"><Link to="/contact/">Contact</Link></li>
+                <li className="about nav-child m-4"><Link to="/about">About</Link></li>
+                <li className="services nav-child m-4"><Link to="/services">Services</Link></li>
+                <li className="contact nav-child m-4"><Link to="/contact">Contact</Link></li>
                 <li className="more nav-child m-4 relative cursor-pointer" onClick={displayOtherNavs}>More {/*<img src="" alt="toggle-icon" className="absolute"/>*/}</li>
             </ul>
              <div className="action-btns flex flex-row justify-center item-center m-0 p-0 text-center">
                 <input type="button" value="Enroll" className="flex enroll-btn m-2 p-2 self-center bg-white cursor-pointer border-solid border-black border-2 w-1/2 h-auto" onClick={()=> redirectRoute(navigator, "/login/")}/>
-                <input type="button" value="Sign Up" className="flex top-signup-btn m-2 p-2 self-center cursor-pointer w-1/2 h-auto" onClick={()=> redirectRoute(navigator, "/signup/")}/>
+                <input type="button" value="Sign Up" className="flex top-signup-btn m-2 p-2 self-center cursor-pointer w-1/2 h-auto" onClick={()=> redirectRoute(navigator, "/signup")}/>
              </div>
             {/* other nav items */}
             <ul className="other-navs hidden flex flex-row justify-between item-center w-auto m-0">
@@ -50,7 +50,7 @@ export const FeatureNav = () =>{
                 </div>
                 <div className="auth-btns flex justify-space-between p-5 font-medium text-lg">
                     <input type="button" value="Learn More" className="learn-more-btn m-4 bg-white text-blue-800 p-3 cursor-pointer" onClick={(e)=> redirectRoute(navigator, "/learn-more/")}/>
-                    <input type="button" value="Sign Up" className="signup-btn m-4 p-3 cursor-pointer" onClick={(e)=> redirectRoute(navigator, "/signup/")}/>
+                    <input type="button" value="Sign Up" className="signup-btn m-4 p-3 cursor-pointer" onClick={(e)=> redirectRoute(navigator, "/signup")}/>
                 </div>
             </div>
         </div>
@@ -72,8 +72,8 @@ export const JoinTheCommunity = () =>{
             <h5 className="discover-text m-2">Discover</h5>
             <h1 className="join-the-com text-6xl font-semibold m-2">Join the community</h1>
             <div className="unlock-nd-cta flex flex-col justify-between items-center h-1/2 text-center m-2">
-                <p className="unlock-text m-2">Unlock you potential with our online learning platform</p>
-                <button type="button m-2">Learn More</button>
+                <p className="unlock-text m-2">Unlock your potential with our online learning platform</p>
+                <button type="button" className="m-2">Learn More</button>
             </div>
         </div>
     )
